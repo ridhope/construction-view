@@ -1,0 +1,19 @@
+api_projects:
+    path: /api/projects
+    controller: App\Controller\ProjectController::getAllProjects
+
+api_project:
+    path: /api/projects/{id}
+    controller: App\Controller\ProjectController::getProjectById
+
+project_index:
+    path: /projects
+    controller: App\Controller\ProjectController::index
+
+project_show:
+    path: /projects/{id}
+    controller: App\Controller\ProjectController::show
+
+favicon:
+    path: /favicon.ico
+    defaults: { _controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction('/favicon.ico') }

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ project.projectName }}</h1>
+    <p>Location: {{ project.projectLocation }}</p>
+    <p>Stage: {{ project.projectStage }}</p>
+    <p>Category: {{ project.projectCategory }}</p>
+    <p>Other Category: {{ project.otherCategory }}</p>
+    <p>Start Date: {{ project.constructionStartDate|date('Y-m-d') }}</p>
+    <p>Details: {{ project.projectDetails }}</p>
+{% endblock %}
